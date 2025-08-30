@@ -1,0 +1,4 @@
+/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles/server.dir
+/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles/client.dir
+/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles/edit_cache.dir
+/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles/rebuild_cache.dir
