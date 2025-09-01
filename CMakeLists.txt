@@ -74,13 +74,13 @@ if (COMM_PROTOCOL STREQUAL "UART")
     
     add_custom_target(upload_client
         COMMAND ${CMAKE_COMMAND} -E chdir ${CMAKE_SOURCE_DIR}/esp32/client
-                pio run --target upload --upload-port "/dev/ttyUSB1"
+                pio run --target upload --upload-port "/dev/ttyUSB0"
         COMMENT "Uploading client firmware..."
     )
     
     add_custom_target(upload_server
         COMMAND ${CMAKE_COMMAND} -E chdir ${CMAKE_SOURCE_DIR}/esp32/server
-                pio run --target upload --upload-port "/dev/ttyUSB0"
+                pio run --target upload --upload-port "/dev/ttyACM0"
         COMMENT "Uploading server firmware..."
     )
 

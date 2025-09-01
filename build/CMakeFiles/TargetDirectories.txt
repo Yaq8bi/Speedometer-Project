@@ -1,6 +1,0 @@
-/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles/upload_client.dir
-/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles/upload_server.dir
-/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles/server.dir
-/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles/client.dir
-/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles/edit_cache.dir
-/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles/rebuild_cache.dir

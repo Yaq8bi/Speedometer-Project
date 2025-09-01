@@ -157,41 +157,33 @@ static int client_gap_event(struct ble_gap_event *event, void *)
 
     switch (event->type)
     {
+
     case BLE_GAP_EVENT_DISC:
         status = ble_hs_adv_parse_fields(&fields, event->disc.data, event->disc.length_data);
-        if (status == 0)
+        if (status != 0)
         {
-            bool connected = false;
-            /* Check if device is already connected or not */
-            if (0 == memcmp(peer_addr.val, event->disc.addr.val, sizeof(event->disc.addr.val)))
-            {
-                ESP_LOGI(TAG, "Device already connected");
-                connected = true;
-                break;
-            }
+            // Parsing failed, just return
+            break;
+        }
 
-            if (!connected)
+        /* Check if the device is advertising connectability. */
+        if ((event->disc.event_type == BLE_HCI_ADV_RPT_EVTYPE_ADV_IND) || (event->disc.event_type == BLE_HCI_ADV_RPT_EVTYPE_DIR_IND))
+        {
+            /* Check if the advertiser is broadcasting our desired service UUID. */
+            for (int i = 0; i < fields.num_uuids16; i++)
             {
-                /* The device has to be advertising connectability. */
-                if ((event->disc.event_type == BLE_HCI_ADV_RPT_EVTYPE_ADV_IND) || (event->disc.event_type == BLE_HCI_ADV_RPT_EVTYPE_DIR_IND))
+                if (ble_uuid_u16(&fields.uuids16[i].u) == GATT_SVC_UUID)
                 {
-                    if (0 == memcmp(event->disc.addr.val, server_addr, sizeof(server_addr)))
-                    {
-                        /* The device has to advertise support for the service. */
-                        for (int i = 0; i < fields.num_uuids16; i++)
-                        {
-                            if (ble_uuid_u16(&fields.uuids16[i].u) == GATT_SVC_UUID)
-                            {
-                                /* Try to connect to the advertiser. */
-                                client_connect(&event->disc);
-                                break;
-                            }
-                        }
-                    }
+                    ESP_LOGI(TAG, "Found target service UUID. Attempting to connect...");
+                    /* Found the service, now connect to the device. */
+                    client_connect(&event->disc);
+                    // We break here because we've found our device and are attempting to connect.
+                    // No need to check other UUIDs on this device.
+                    break;
                 }
             }
         }
-        break;
+        break; // End of BLE_GAP_EVENT_DISC case
 
     case BLE_GAP_EVENT_CONNECT: /* A new connection was established or a connection attempt failed. */
         if (event->connect.status == 0)

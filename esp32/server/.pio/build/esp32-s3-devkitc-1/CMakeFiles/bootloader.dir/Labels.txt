@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/CMakeFiles/bootloader
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/CMakeFiles/bootloader.rule
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/CMakeFiles/bootloader-complete.rule
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/esp32/server/.pio/build/esp32-s3-devkitc-1/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

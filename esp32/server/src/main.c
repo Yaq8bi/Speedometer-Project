@@ -1,5 +1,5 @@
 #include "esp_bt.h"
-#include "setting.h"
+// #include "setting.h"
 #include "esp_log.h"
 #include <stdbool.h>
 #include "nvs_flash.h"
@@ -11,6 +11,11 @@
 #include "services/gap/ble_svc_gap.h"
 #include "services/gatt/ble_svc_gatt.h"
 #include "nimble/nimble_port_freertos.h"
+
+// For ESP32-S3's Onboard  LED strip.
+#include "led_strip.h"
+#define ONBOARD_LED_GPIO 48
+#define HALF_BRIGHTNESS 8
 
 #define TAG "SERVER"
 #define DEVICE_NAME "BLE_SERVER"
@@ -27,6 +32,72 @@ typedef struct
 {
     uint8_t data[MSGLEN];
 } uart_msg_t;
+
+#if 1 // S3 specific on-board LED Strip.
+// My onboard_led_strip:
+enum on_board_led_strip
+{
+    LED_OFF = 0,
+    LED_BLUE,
+    LED_RED
+};
+
+static led_strip_handle_t led_strip;
+bool first_time_flag = true;
+static void on_board_led_strip(enum on_board_led_strip led)
+{
+    if (first_time_flag)
+    {
+        // Basic configuration for the RMT channel
+        led_strip_rmt_config_t rmt_config = {
+            .resolution_hz = 10 * 1000 * 1000, // 10MHz
+            .flags.with_dma = false,
+        };
+
+        // Configuration for the LED strip itself
+        led_strip_config_t strip_config = {
+            .strip_gpio_num = ONBOARD_LED_GPIO,
+            .max_leds = 1,
+            .led_pixel_format = LED_PIXEL_FORMAT_GRB, // Standard for WS2812
+            .led_model = LED_MODEL_WS2812,
+            .flags.invert_out = false,
+        };
+
+        ESP_ERROR_CHECK(led_strip_new_rmt_device(&strip_config, &rmt_config, &led_strip));
+
+        // Clear the LED strip (turn it off) upon initialization
+        led_strip_clear(led_strip);
+
+        first_time_flag = false;
+    }
+    else
+    {
+
+        switch (led)
+        {
+        case LED_OFF:
+            ESP_ERROR_CHECK(led_strip_set_pixel(led_strip, 0, 0, 0, 0));
+            // Refresh the strip to send the new color data
+            ESP_ERROR_CHECK(led_strip_refresh(led_strip));
+
+            break;
+        case LED_BLUE:
+            ESP_ERROR_CHECK(led_strip_set_pixel(led_strip, 0, 0, 0, HALF_BRIGHTNESS));
+            // Refresh the strip to send the new color data
+            ESP_ERROR_CHECK(led_strip_refresh(led_strip));
+
+            break;
+        case LED_RED:
+            ESP_ERROR_CHECK(led_strip_set_pixel(led_strip, 0, HALF_BRIGHTNESS, 0, 0));
+            // Refresh the strip to send the new color data
+            ESP_ERROR_CHECK(led_strip_refresh(led_strip));
+            break;
+        default:
+            break;
+        }
+    }
+}
+#endif
 
 // Circular buffer
 static uart_msg_t uart_queue[UART_QUEUE_LEN];
@@ -150,6 +221,8 @@ static int server_gap_event(struct ble_gap_event *event, void *)
         ESP_LOGI(TAG, "connection %s; status=%d ", event->connect.status == 0 ? "established" : "failed", event->connect.status);
         if (event->connect.status == 0)
         {
+            on_board_led_strip(LED_BLUE); // We connected.
+
             assert(0 == ble_gap_conn_find(event->connect.conn_handle, &desc));
             server_print_conn_desc(&desc);
 
@@ -177,6 +250,8 @@ static int server_gap_event(struct ble_gap_event *event, void *)
         server_print_conn_desc(&event->disconnect.conn);
         server_conn_handle = BLE_HS_CONN_HANDLE_NONE;
         server_advertise();
+        // Turn off onboard LED strip on discounnect.
+        on_board_led_strip(LED_OFF);
         break;
 
     case BLE_GAP_EVENT_ADV_COMPLETE:
@@ -212,10 +287,13 @@ static int server_gap_event(struct ble_gap_event *event, void *)
 static void server_on_reset(int reason)
 {
     ESP_LOGE(TAG, "Resetting state; reason=%d\n", reason);
+    on_board_led_strip(LED_OFF); // Server got reset.
 }
 
 static void server_on_sync(void)
 {
+    on_board_led_strip(LED_OFF); 
+
     assert(0 == ble_hs_id_set_rnd(server_addr)); // Set random static address; BLE_ADDR_RANDOM
 
     assert(0 == ble_hs_util_ensure_addr(0));
@@ -303,6 +381,7 @@ void uart_task(void *pvParameters)
         int n = uart_read_bytes(UART_NUM, buffer, MSGLEN, portMAX_DELAY);
         if (n == MSGLEN)
         {
+            on_board_led_strip(LED_RED);
             int next_head = (uart_head + 1) % UART_QUEUE_LEN;
             if (next_head != uart_tail) // queue not full
             {
@@ -315,6 +394,7 @@ void uart_task(void *pvParameters)
                 ESP_LOGW(TAG, "UART queue full, dropping message");
             }
         }
+        on_board_led_strip(LED_BLUE);
     }
 }
 
