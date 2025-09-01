@@ -1,6 +1,19 @@
-# This is a speedometer project that i've worked with @Lichuid, @Kliff, @Obogg, @Boris.
+# This is a Speedometer project
 
-<!-- 
-[![What is this project and Demo of the project](https://img.youtube.com/vi/PqhfeZm1Rfs/0.jpg)](https://www.youtube.com/watch?v=PqhfeZm1Rfs) -->
+## Introduction:
+This was a school project done by a group of students. 
+The main idea was to have a server and client side GUI(Graphical User Interface) for user to control a functional digital car dashboard made using QT framework. 
 
-<iframe width="931" height="524" src="https://www.youtube.com/embed/PqhfeZm1Rfs" title="Speedometer_project demo TCP/IP 2025 08 30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Team Members
+
+- [Lichuid](https://github.com/Lichuid)
+- [Obogg](https://github.com/Obogger)
+- [Kliff](https://github.com/Kliff)
+- [Boris](https://github.com/BorisBunoza)
+
+
+## Demo
+
+*Click the image below to watch the demo of the project and a brief explanation of what it is:*
+[![What is this project and Demo of the project](https://img.youtube.com/vi/PqhfeZm1Rfs/0.jpg)](https://www.youtube.com/watch?v=PqhfeZm1Rfs)
+
