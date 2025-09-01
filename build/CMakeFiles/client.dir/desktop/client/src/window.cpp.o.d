@@ -1,7 +1,7 @@
 CMakeFiles/client.dir/desktop/client/src/window.cpp.o: \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/src/window.cpp \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/src/window.cpp \
  /usr/include/stdc-predef.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/include/window.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/window.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -327,7 +327,7 @@ CMakeFiles/client.dir/desktop/client/src/window.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/include/canvas.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/canvas.h \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QMediaPlayer \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qmediaplayer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
@@ -347,7 +347,7 @@ CMakeFiles/client.dir/desktop/client/src/window.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioOutput \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiooutput.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/include/comservice.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/comservice.h \
  /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
@@ -360,6 +360,6 @@ CMakeFiles/client.dir/desktop/client/src/window.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/shared/setting.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/shared/setting.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h

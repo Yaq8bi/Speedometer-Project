@@ -1,5 +1,5 @@
 CMakeFiles/client.dir/desktop/client/main.cpp.o: \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/main.cpp \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/main.cpp \
  /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
@@ -321,7 +321,7 @@ CMakeFiles/client.dir/desktop/client/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/include/window.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/window.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
@@ -347,7 +347,7 @@ CMakeFiles/client.dir/desktop/client/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/include/canvas.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/canvas.h \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QMediaPlayer \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qmediaplayer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
@@ -358,7 +358,7 @@ CMakeFiles/client.dir/desktop/client/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioOutput \
  /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiooutput.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/include/comservice.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/comservice.h \
  /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
@@ -371,30 +371,12 @@ CMakeFiles/client.dir/desktop/client/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/shared/setting.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/include/tcpservice.h \
- /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/bits/socket_type.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/shared/setting.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/uartservice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QThread \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qthread.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/c++/11/future /usr/include/c++/11/condition_variable \
+ /usr/include/c++/11/bits/atomic_futex.h \
+ /usr/include/c++/11/bits/std_thread.h

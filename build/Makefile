@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yaq8bi/GITHUB_REPOS/av24tr-team-d
+CMAKE_SOURCE_DIR = /home/yaq8bi/GITHUB_REPOS/Speedometer-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build
+CMAKE_BINARY_DIR = /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,6 +115,32 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named upload_client
+
+# Build rule for target.
+upload_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upload_client
+.PHONY : upload_client
+
+# fast build rule for target.
+upload_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_client.dir/build.make CMakeFiles/upload_client.dir/build
+.PHONY : upload_client/fast
+
+#=============================================================================
+# Target rules for targets named upload_server
+
+# Build rule for target.
+upload_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 upload_server
+.PHONY : upload_server
+
+# fast build rule for target.
+upload_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_server.dir/build.make CMakeFiles/upload_server.dir/build
+.PHONY : upload_server/fast
 
 #=============================================================================
 # Target rules for targets named server
@@ -214,29 +240,29 @@ desktop/client/src/comservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/desktop/client/src/comservice.cpp.s
 .PHONY : desktop/client/src/comservice.cpp.s
 
-desktop/client/src/tcpservice.o: desktop/client/src/tcpservice.cpp.o
-.PHONY : desktop/client/src/tcpservice.o
+desktop/client/src/uartservice.o: desktop/client/src/uartservice.cpp.o
+.PHONY : desktop/client/src/uartservice.o
 
 # target to build an object file
-desktop/client/src/tcpservice.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/desktop/client/src/tcpservice.cpp.o
-.PHONY : desktop/client/src/tcpservice.cpp.o
+desktop/client/src/uartservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/desktop/client/src/uartservice.cpp.o
+.PHONY : desktop/client/src/uartservice.cpp.o
 
-desktop/client/src/tcpservice.i: desktop/client/src/tcpservice.cpp.i
-.PHONY : desktop/client/src/tcpservice.i
+desktop/client/src/uartservice.i: desktop/client/src/uartservice.cpp.i
+.PHONY : desktop/client/src/uartservice.i
 
 # target to preprocess a source file
-desktop/client/src/tcpservice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/desktop/client/src/tcpservice.cpp.i
-.PHONY : desktop/client/src/tcpservice.cpp.i
+desktop/client/src/uartservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/desktop/client/src/uartservice.cpp.i
+.PHONY : desktop/client/src/uartservice.cpp.i
 
-desktop/client/src/tcpservice.s: desktop/client/src/tcpservice.cpp.s
-.PHONY : desktop/client/src/tcpservice.s
+desktop/client/src/uartservice.s: desktop/client/src/uartservice.cpp.s
+.PHONY : desktop/client/src/uartservice.s
 
 # target to generate assembly for a file
-desktop/client/src/tcpservice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/desktop/client/src/tcpservice.cpp.s
-.PHONY : desktop/client/src/tcpservice.cpp.s
+desktop/client/src/uartservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/desktop/client/src/uartservice.cpp.s
+.PHONY : desktop/client/src/uartservice.cpp.s
 
 desktop/client/src/window.o: desktop/client/src/window.cpp.o
 .PHONY : desktop/client/src/window.o
@@ -310,29 +336,29 @@ desktop/server/src/comservice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/desktop/server/src/comservice.cpp.s
 .PHONY : desktop/server/src/comservice.cpp.s
 
-desktop/server/src/tcpservice.o: desktop/server/src/tcpservice.cpp.o
-.PHONY : desktop/server/src/tcpservice.o
+desktop/server/src/uartservice.o: desktop/server/src/uartservice.cpp.o
+.PHONY : desktop/server/src/uartservice.o
 
 # target to build an object file
-desktop/server/src/tcpservice.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o
-.PHONY : desktop/server/src/tcpservice.cpp.o
+desktop/server/src/uartservice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o
+.PHONY : desktop/server/src/uartservice.cpp.o
 
-desktop/server/src/tcpservice.i: desktop/server/src/tcpservice.cpp.i
-.PHONY : desktop/server/src/tcpservice.i
+desktop/server/src/uartservice.i: desktop/server/src/uartservice.cpp.i
+.PHONY : desktop/server/src/uartservice.i
 
 # target to preprocess a source file
-desktop/server/src/tcpservice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.i
-.PHONY : desktop/server/src/tcpservice.cpp.i
+desktop/server/src/uartservice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.i
+.PHONY : desktop/server/src/uartservice.cpp.i
 
-desktop/server/src/tcpservice.s: desktop/server/src/tcpservice.cpp.s
-.PHONY : desktop/server/src/tcpservice.s
+desktop/server/src/uartservice.s: desktop/server/src/uartservice.cpp.s
+.PHONY : desktop/server/src/uartservice.s
 
 # target to generate assembly for a file
-desktop/server/src/tcpservice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.s
-.PHONY : desktop/server/src/tcpservice.cpp.s
+desktop/server/src/uartservice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.s
+.PHONY : desktop/server/src/uartservice.cpp.s
 
 desktop/server/src/window.o: desktop/server/src/window.cpp.o
 .PHONY : desktop/server/src/window.o
@@ -366,6 +392,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... upload_client"
+	@echo "... upload_server"
 	@echo "... client"
 	@echo "... server"
 	@echo "... desktop/client/main.o"
@@ -377,9 +405,9 @@ help:
 	@echo "... desktop/client/src/comservice.o"
 	@echo "... desktop/client/src/comservice.i"
 	@echo "... desktop/client/src/comservice.s"
-	@echo "... desktop/client/src/tcpservice.o"
-	@echo "... desktop/client/src/tcpservice.i"
-	@echo "... desktop/client/src/tcpservice.s"
+	@echo "... desktop/client/src/uartservice.o"
+	@echo "... desktop/client/src/uartservice.i"
+	@echo "... desktop/client/src/uartservice.s"
 	@echo "... desktop/client/src/window.o"
 	@echo "... desktop/client/src/window.i"
 	@echo "... desktop/client/src/window.s"
@@ -389,9 +417,9 @@ help:
 	@echo "... desktop/server/src/comservice.o"
 	@echo "... desktop/server/src/comservice.i"
 	@echo "... desktop/server/src/comservice.s"
-	@echo "... desktop/server/src/tcpservice.o"
-	@echo "... desktop/server/src/tcpservice.i"
-	@echo "... desktop/server/src/tcpservice.s"
+	@echo "... desktop/server/src/uartservice.o"
+	@echo "... desktop/server/src/uartservice.i"
+	@echo "... desktop/server/src/uartservice.s"
 	@echo "... desktop/server/src/window.o"
 	@echo "... desktop/server/src/window.i"
 	@echo "... desktop/server/src/window.s"

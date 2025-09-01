@@ -1,4 +1,4 @@
-# Install script for directory: /home/yaq8bi/GITHUB_REPOS/av24tr-team-d
+# Install script for directory: /home/yaq8bi/GITHUB_REPOS/Speedometer-Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

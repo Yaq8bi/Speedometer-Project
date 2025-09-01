@@ -1,5 +1,5 @@
 CMakeFiles/server.dir/desktop/server/src/window.cpp.o: \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/window.cpp \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/window.cpp \
  /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyle \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
@@ -339,7 +339,7 @@ CMakeFiles/server.dir/desktop/server/src/window.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/include/window.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/include/window.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
@@ -387,7 +387,7 @@ CMakeFiles/server.dir/desktop/server/src/window.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/include/comservice.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/include/comservice.h \
  /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/shared/setting.h
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/shared/setting.h

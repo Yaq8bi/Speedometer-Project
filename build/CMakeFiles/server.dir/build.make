@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yaq8bi/GITHUB_REPOS/av24tr-team-d
+CMAKE_SOURCE_DIR = /home/yaq8bi/GITHUB_REPOS/Speedometer-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build
+CMAKE_BINARY_DIR = /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -72,65 +72,65 @@ include CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/desktop/server/main.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/desktop/server/main.cpp.o: ../desktop/server/main.cpp
 CMakeFiles/server.dir/desktop/server/main.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/desktop/server/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/desktop/server/main.cpp.o -MF CMakeFiles/server.dir/desktop/server/main.cpp.o.d -o CMakeFiles/server.dir/desktop/server/main.cpp.o -c /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/desktop/server/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/desktop/server/main.cpp.o -MF CMakeFiles/server.dir/desktop/server/main.cpp.o.d -o CMakeFiles/server.dir/desktop/server/main.cpp.o -c /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/main.cpp
 
 CMakeFiles/server.dir/desktop/server/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/desktop/server/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/main.cpp > CMakeFiles/server.dir/desktop/server/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/main.cpp > CMakeFiles/server.dir/desktop/server/main.cpp.i
 
 CMakeFiles/server.dir/desktop/server/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/desktop/server/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/main.cpp -o CMakeFiles/server.dir/desktop/server/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/main.cpp -o CMakeFiles/server.dir/desktop/server/main.cpp.s
 
 CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o: ../desktop/server/src/comservice.cpp
 CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o -MF CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o.d -o CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o -c /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/comservice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o -MF CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o.d -o CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o -c /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/comservice.cpp
 
 CMakeFiles/server.dir/desktop/server/src/comservice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/desktop/server/src/comservice.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/comservice.cpp > CMakeFiles/server.dir/desktop/server/src/comservice.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/comservice.cpp > CMakeFiles/server.dir/desktop/server/src/comservice.cpp.i
 
 CMakeFiles/server.dir/desktop/server/src/comservice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/desktop/server/src/comservice.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/comservice.cpp -o CMakeFiles/server.dir/desktop/server/src/comservice.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/comservice.cpp -o CMakeFiles/server.dir/desktop/server/src/comservice.cpp.s
 
 CMakeFiles/server.dir/desktop/server/src/window.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/desktop/server/src/window.cpp.o: ../desktop/server/src/window.cpp
 CMakeFiles/server.dir/desktop/server/src/window.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/desktop/server/src/window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/desktop/server/src/window.cpp.o -MF CMakeFiles/server.dir/desktop/server/src/window.cpp.o.d -o CMakeFiles/server.dir/desktop/server/src/window.cpp.o -c /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/desktop/server/src/window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/desktop/server/src/window.cpp.o -MF CMakeFiles/server.dir/desktop/server/src/window.cpp.o.d -o CMakeFiles/server.dir/desktop/server/src/window.cpp.o -c /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/window.cpp
 
 CMakeFiles/server.dir/desktop/server/src/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/desktop/server/src/window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/window.cpp > CMakeFiles/server.dir/desktop/server/src/window.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/window.cpp > CMakeFiles/server.dir/desktop/server/src/window.cpp.i
 
 CMakeFiles/server.dir/desktop/server/src/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/desktop/server/src/window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/window.cpp -o CMakeFiles/server.dir/desktop/server/src/window.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/window.cpp -o CMakeFiles/server.dir/desktop/server/src/window.cpp.s
 
-CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o: ../desktop/server/src/tcpservice.cpp
-CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o -MF CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o.d -o CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o -c /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/tcpservice.cpp
+CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o: ../desktop/server/src/uartservice.cpp
+CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o -MF CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o.d -o CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o -c /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/uartservice.cpp
 
-CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/tcpservice.cpp > CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.i
+CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/uartservice.cpp > CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.i
 
-CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/server/src/tcpservice.cpp -o CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.s
+CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/uartservice.cpp -o CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.s
 
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/desktop/server/main.cpp.o" \
 "CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o" \
 "CMakeFiles/server.dir/desktop/server/src/window.cpp.o" \
-"CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o"
+"CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
@@ -138,15 +138,16 @@ server_EXTERNAL_OBJECTS =
 server: CMakeFiles/server.dir/desktop/server/main.cpp.o
 server: CMakeFiles/server.dir/desktop/server/src/comservice.cpp.o
 server: CMakeFiles/server.dir/desktop/server/src/window.cpp.o
-server: CMakeFiles/server.dir/desktop/server/src/tcpservice.cpp.o
+server: CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4
+server: /usr/lib/x86_64-linux-gnu/libQt6SerialPort.so.6.2.4
 server: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4
-server: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4
 server: /usr/lib/x86_64-linux-gnu/libGLX.so
 server: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+server: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +159,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yaq8bi/GITHUB_REPOS/av24tr-team-d /home/yaq8bi/GITHUB_REPOS/av24tr-team-d /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yaq8bi/GITHUB_REPOS/Speedometer-Project /home/yaq8bi/GITHUB_REPOS/Speedometer-Project /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/server.dir/depend
 

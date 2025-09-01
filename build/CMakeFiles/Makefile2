@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yaq8bi/GITHUB_REPOS/av24tr-team-d
+CMAKE_SOURCE_DIR = /home/yaq8bi/GITHUB_REPOS/Speedometer-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build
+CMAKE_BINARY_DIR = /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -72,25 +72,79 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/upload_client.dir/clean
+clean: CMakeFiles/upload_server.dir/clean
 clean: CMakeFiles/server.dir/clean
 clean: CMakeFiles/client.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/upload_client.dir
+
+# All Build rule for target.
+CMakeFiles/upload_client.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_client.dir/build.make CMakeFiles/upload_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_client.dir/build.make CMakeFiles/upload_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=12 "Built target upload_client"
+.PHONY : CMakeFiles/upload_client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/upload_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/upload_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 0
+.PHONY : CMakeFiles/upload_client.dir/rule
+
+# Convenience name for target.
+upload_client: CMakeFiles/upload_client.dir/rule
+.PHONY : upload_client
+
+# clean rule for target.
+CMakeFiles/upload_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_client.dir/build.make CMakeFiles/upload_client.dir/clean
+.PHONY : CMakeFiles/upload_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/upload_server.dir
+
+# All Build rule for target.
+CMakeFiles/upload_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_server.dir/build.make CMakeFiles/upload_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_server.dir/build.make CMakeFiles/upload_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=13 "Built target upload_server"
+.PHONY : CMakeFiles/upload_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/upload_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/upload_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 0
+.PHONY : CMakeFiles/upload_server.dir/rule
+
+# Convenience name for target.
+upload_server: CMakeFiles/upload_server.dir/rule
+.PHONY : upload_server
+
+# clean rule for target.
+CMakeFiles/upload_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/upload_server.dir/build.make CMakeFiles/upload_server.dir/clean
+.PHONY : CMakeFiles/upload_server.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/server.dir
 
 # All Build rule for target.
-CMakeFiles/server.dir/all:
+CMakeFiles/server.dir/all: CMakeFiles/upload_server.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles --progress-num=7,8,9,10,11 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=7,8,9,10,11 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/server.dir/rule
 
 # Convenience name for target.
@@ -106,17 +160,17 @@ CMakeFiles/server.dir/clean:
 # Target rules for target CMakeFiles/client.dir
 
 # All Build rule for target.
-CMakeFiles/client.dir/all:
+CMakeFiles/client.dir/all: CMakeFiles/upload_client.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/client.dir/rule
 
 # Convenience name for target.

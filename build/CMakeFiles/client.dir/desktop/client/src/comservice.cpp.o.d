@@ -1,7 +1,7 @@
 CMakeFiles/client.dir/desktop/client/src/comservice.cpp.o: \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/src/comservice.cpp \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/src/comservice.cpp \
  /usr/include/stdc-predef.h \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/desktop/client/include/comservice.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/comservice.h \
  /usr/include/c++/11/mutex /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -158,7 +158,7 @@ CMakeFiles/client.dir/desktop/client/src/comservice.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/yaq8bi/GITHUB_REPOS/av24tr-team-d/shared/setting.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/shared/setting.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/node_handle.h \

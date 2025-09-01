@@ -1,11 +1,9 @@
-CMakeFiles/client.dir/desktop/client/src/canvas.cpp.o: \
- /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/src/canvas.cpp \
+CMakeFiles/server.dir/desktop/server/src/uartservice.cpp.o: \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/src/uartservice.cpp \
  /usr/include/stdc-predef.h \
- /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/client/include/canvas.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -154,29 +152,13 @@ CMakeFiles/client.dir/desktop/client/src/canvas.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
- /usr/include/c++/11/cstring /usr/include/c++/11/iterator \
- /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
- /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
- /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/iterator /usr/include/c++/11/iosfwd \
+ /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \
+ /usr/include/c++/11/cwchar /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -239,6 +221,18 @@ CMakeFiles/client.dir/desktop/client/src/canvas.cpp.o: \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
  /usr/include/c++/11/stdlib.h \
@@ -247,44 +241,26 @@ CMakeFiles/client.dir/desktop/client/src/canvas.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringtokenizer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
- /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
- /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -293,59 +269,45 @@ CMakeFiles/client.dir/desktop/client/src/canvas.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QMediaPlayer \
- /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qmediaplayer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h \
- /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qmediaenumdebug.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
- /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h \
- /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioOutput \
- /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiooutput.h \
- /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/shared/setting.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/list.tcc \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/ctime \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/shared/setting.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSerialPort/QSerialPort \
+ /usr/include/x86_64-linux-gnu/qt6/QtSerialPort/qserialport.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSerialPort/qserialportglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtSerialPort/QSerialPortInfo \
+ /usr/include/x86_64-linux-gnu/qt6/QtSerialPort/qserialportinfo.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/include/uartservice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QThread \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qthread.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/c++/11/future /usr/include/c++/11/mutex \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/c++/11/condition_variable \
+ /usr/include/c++/11/bits/atomic_futex.h \
+ /usr/include/c++/11/bits/std_thread.h \
+ /home/yaq8bi/GITHUB_REPOS/Speedometer-Project/desktop/server/include/comservice.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
@@ -355,4 +317,6 @@ CMakeFiles/client.dir/desktop/client/src/canvas.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h
